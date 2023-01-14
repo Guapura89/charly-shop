@@ -45,7 +45,7 @@ header {
   color: white;
 }
 
-/* primary button styles */
+/* primary/dark button styles */
 
 .primary-button {
   background-color: #7d79f2;
@@ -60,6 +60,21 @@ header {
 .primary-button:hover {
   cursor: pointer;
   background-color: #8f8ce9;
+}
+
+.dark-button {
+  background-color: #262626;
+  padding: 10px 30px;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+
+.dark-button:hover {
+  cursor: pointer;
+  background-color: #3a3939;
 }
 
 /* container for global use */
@@ -97,3 +112,83 @@ header {
 .banner-right-img {
   width: 100%;
 }
+
+/* categories styles */
+.categories__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px;
+  margin: 200px auto;
+}
+
+.categories__container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  transition: all ease-in-out 0.3s;
+}
+
+/* .category__title {
+  position: absolute;
+  color: white;
+} */
+
+.categories__container div:hover {
+  cursor: pointer;
+}
+
+.categories__container div:nth-child(1) {
+  grid-column: 1/3;
+}
+
+.categories__container div:nth-child(1) img {
+  margin-top: 200px;
+}
+
+.categories__container div img {
+  width: 100%;
+  transition: 1s;
+}
+
+.categories__container div img:hover {
+  transform: scale(1.2);
+}
+
+.categories__container div:nth-child(5) {
+  grid-column: 2/4;
+}
+
+.categories__container div:nth-child(3) img,
+.categories__container div:nth-child(4) img,
+.categories__container div:nth-child(6) img {
+  width: 100%;
+  height: 100%;
+}
+
+.categories__container div:nth-child(5) img {
+  margin-top: 300px;
+}
+
+/* contact section styles */
+
+.contact-section {
+  width: 100%;
+  background-color: #514bf2;
+  text-align: center;
+  padding: 100px 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn-contact {
+  margin: 50px auto;
+  padding: 15px 100px;
+}
+
+/* opinions styles */
