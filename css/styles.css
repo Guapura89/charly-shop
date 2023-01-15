@@ -240,8 +240,14 @@ header {
 }
 
 /* opinions styles */
+
+.opinions-title {
+  margin-top: 200px;
+  text-align: center;
+  font-size: 1.5em;
+}
 .opinions-container {
-  margin: 200px auto;
+  margin: 50px auto 200px auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
@@ -257,6 +263,8 @@ header {
   text-align: center;
   height: 600px;
   justify-content: space-between;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .card-image {
