@@ -14,7 +14,7 @@
     <title>Charly shop</title>
   </head>
   <body>
-    <header>
+    <header id="header">
       <nav class="navigation">
         <div class="navigation-logo__container">
           <img
@@ -26,12 +26,16 @@
         <div class="navigation-menu__container">
           <ul class="navigation-menu__list">
             <li class="navigation-menu__item"><a href="/">Home</a></li>
-            <li class="navigation-menu__item"><a href="">Contact us</a></li>
-            <li class="navigation-menu__item"><a href="">Log in</a></li>
+            <li class="navigation-menu__item"><a href="#">Contact us</a></li>
+            <li class="navigation-menu__item"><a href="#">Log in</a></li>
             <li class="navigation-menu__item">
               <button class="primary-button">Sign up</button>
             </li>
           </ul>
+        </div>
+
+        <div class="menu-logo">
+          <img src="./assets/images/menu.png" alt="" />
         </div>
       </nav>
     </header>
@@ -42,9 +46,17 @@
         <h1 class="banner-left-text">
           Clothing is not an outfit, it is a philosophy.
         </h1>
-        <img class="banner-left-img" src="" alt="" />
+        <img class="banner-left-img" src="./assets/images/decor.png" alt="" />
+        <div class="email-section">
+          <input type="text" placeholder="Enter your email" />
+          <button class="primary-button">Submit</button>
+        </div>
         <div class="banner-left__credits">
-          <p>Image by furkanfdemir on Pexels.</p>
+          <p>
+            - Image by <span class="autor"><a href="">furkanfdemir</a></span> on
+            <span class="platform"><a href="">Pexels</a></span
+            >.
+          </p>
         </div>
       </div>
       <div class="banner-right__container">
@@ -94,8 +106,8 @@
           <div class="opinion-content">
             <h3>Paul</h3>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
-              architecto sequi dolor deserunt aspernatur repellat?
+              "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              architecto sequi dolor deserunt aspernatur repellat?"
             </p>
           </div>
         </div>
@@ -104,10 +116,10 @@
             <img src="./assets/images/person.jpg" alt="profile" />
           </div>
           <div class="opinion-content">
-            <h3>Paul</h3>
+            <h3>Roberto</h3>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
-              architecto sequi dolor deserunt aspernatur repellat?
+              "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              architecto sequi dolor deserunt aspernatur repellat?"
             </p>
           </div>
         </div>
@@ -116,14 +128,51 @@
             <img src="./assets/images/person.jpg" alt="profile" />
           </div>
           <div class="opinion-content">
-            <h3>Paul</h3>
+            <h3>Luis</h3>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
-              architecto sequi dolor deserunt aspernatur repellat?
+              "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              architecto sequi dolor deserunt aspernatur repellat?"
             </p>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer__container">
+        <div class="footer-logo__container">
+          <img src="./assets/images/logo.png" alt="logo" />
+        </div>
+
+        <div class="links-section">
+          <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="">Contact us</a></li>
+            <li><a href="">Catalogue</a></li>
+          </ul>
+        </div>
+
+        <div class="social-section">
+          <ul>
+            <li>
+              <a href=""
+                ><img src="./assets/images/facebook.png" alt="facebook"
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="./assets/images/twitter.png" alt="twitter"
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="./assets/images/instagram.png" alt="instagram"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
