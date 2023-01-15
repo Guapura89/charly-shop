@@ -442,6 +442,14 @@ footer {
   .categories__container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .social-section ul {
+    flex-direction: column;
+  }
+
+  .footer__container {
+    padding: 0 10px;
+  }
 }
 
 @media (max-width: 500px) {
