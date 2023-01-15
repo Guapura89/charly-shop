@@ -113,6 +113,7 @@ header {
   font-size: 2em;
   text-align: center;
   position: relative;
+  padding: 10px;
 }
 
 .banner-left__credits {
@@ -127,6 +128,7 @@ header {
 .platform a {
   color: white;
   transition: 0.2s;
+  font-weight: bold;
 }
 
 .autor a:hover,
@@ -143,6 +145,7 @@ header {
   border-radius: 25px;
   outline: none;
   border: none;
+  margin: 10px 0;
 }
 
 .banner-right__container {
@@ -151,6 +154,8 @@ header {
 
 .banner-right-img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* categories styles */
@@ -193,6 +198,7 @@ header {
 .categories__container div img {
   width: 100%;
   transition: 1s;
+  object-fit: cover;
 }
 
 .categories__container div img:hover {
@@ -346,6 +352,39 @@ footer {
 
 /* Breakpoints */
 
+@media (max-width: 1200px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .banner-left__container {
+    font-size: 1.5em;
+  }
+  .opinions-container {
+    width: 70%;
+    grid-template-columns: 1fr;
+  }
+
+  .footer__container {
+    grid-template-columns: 1fr;
+  }
+
+  .links-section {
+    font-size: 1.3em;
+  }
+
+  .links-section,
+  .social-section {
+    margin: 80px;
+  }
+
+  .social-section ul {
+    gap: 20px;
+  }
+}
+
 @media (max-width: 800px) {
   .navigation-menu__container {
     display: none;
@@ -353,5 +392,52 @@ footer {
 
   .menu-logo {
     display: block;
+  }
+
+  .banner {
+    border-radius: 0;
+  }
+
+  .banner-left__container {
+    font-size: 1em;
+    width: 100%;
+  }
+
+  .banner-right__container,
+  .banner-left__credits {
+    display: none;
+  }
+
+  .categories__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .categories__container div:nth-child(1) {
+    grid-column: initial;
+  }
+
+  .categories__container div:nth-child(5) {
+    grid-column: initial;
+  }
+
+  .categories__container div:nth-child(1) img,
+  .categories__container div:nth-child(5) img {
+    margin-top: 0;
+  }
+
+  .opinions-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 680px) {
+  .categories__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .categories__container {
+    grid-template-columns: 1fr;
   }
 }
