@@ -31,9 +31,9 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: |
-            user/app:latest
-            user/app:1.0.0
-            guapura89/charly-shop:latest
+          tags: guapura89/charly-shop:latest
+        
+          
+            
          
 
