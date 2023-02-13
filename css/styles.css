@@ -30,6 +30,10 @@ header {
   width: 80%;
 }
 
+.navigation-logo__container img:hover {
+  cursor: pointer;
+}
+
 .navigation-menu__container {
   padding: 2px;
   color: white;
@@ -311,6 +315,10 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.footer-logo__container img:hover {
+  cursor: pointer;
 }
 
 .links-section {
